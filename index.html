@@ -1,14 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2 id="demo" style="display: none;">Block of text</h2>
+<html>
+	<head>
+		<title>Oprah Likes You. And so do other people.</title>
 
-    <button type="button" onclick="document.getElementById('demo').style.display = 'block'">Click me!</button>
-</body>
+		<style>
+			/* Basic CSS comment */
+			body {
+				background: #bbb;
+				color: black;
+				width: 960px;
+				margin: 0 auto;
+			}
+
+			h1 {
+				font-size: 80px;
+				color: #333;
+			}
+		</style>
+
+		<script>
+			/* This is event */
+			//alert("This is a message");
+
+			var username = prompt("Hello who are you?");
+            var car = new Array("BMW", "Mercedez", "Audi");
+
+			if (username == "Pasindu") {
+				document.write("<h2> Hello " + username + "! You have won a " + car[1] +"</h2>");
+			} else {
+				document.write("<h2> Hello " + username + "! </h2>");
+			}
+		</script>
+	</head>
+
+	<body>
+        <img src="https://www.telegraph.co.uk/content/dam/news/2018/01/09/TELEMMGLPICT000150869401_trans_NvBQzQNjv4BqM4jyXBDWA13jCDOSysTa2-snmRGcD6WDaSWaJbPatNM.jpeg?imwidth=450" alt="Oprah">
+    </body>
 </html>
