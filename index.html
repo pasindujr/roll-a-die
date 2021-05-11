@@ -1,39 +1,48 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 	<head>
-		<title>Oprah Likes You. And so do other people.</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Happy Hour App - How about a drink!?">
+		<meta name="keywords" content="happy hour, drink, beers">
 
-		<style>
-			/* Basic CSS comment */
-			body {
-				background: #bbb;
-				color: black;
-				width: 960px;
-				margin: 0 auto;
-			}
-
-			h1 {
-				font-size: 80px;
-				color: #333;
-			}
-		</style>
+		<title>Happy Hour</title>
+		
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
 
 		<script>
-			/* This is event */
-			//alert("This is a message");
+		
+			// Our List of Bars
+			var bars = [
+				'Siggys',
+				'Blind Tiger',
+				'Zum Schneider',
+				'One Month',
+				'Home Sweet Home',
+				'Union Pool'
+			];
 
-			var username = prompt("Hello who are you?");
-            var car = new Array("BMW", "Mercedez", "Audi");
+			// Our List of Friends
+			var friends = [
+				'Mattan',
+				'Chris',
+				'Lee',
+				'Casey',
+				'that girl you forgot to text back',
+				'Kayne West'
+			];
 
-			if (username == "Pasindu") {
-				document.write("<h2> Hello " + username + "! You have won a " + car[1] +"</h2>");
-			} else {
-				document.write("<h2> Hello " + username + "! </h2>");
-			}
+			var randomNumber = Math.floor(Math.random()*bars.length);
+			
+			var barname = bars[randomNumber];
+			var friendname = friends[randomNumber];
+
+			document.write("How about you go to <strong>" + barname + "</strong> with <strong>" + friendname + "</strong>?");
+		
 		</script>
 	</head>
-
 	<body>
-        <img src="https://www.telegraph.co.uk/content/dam/news/2018/01/09/TELEMMGLPICT000150869401_trans_NvBQzQNjv4BqM4jyXBDWA13jCDOSysTa2-snmRGcD6WDaSWaJbPatNM.jpeg?imwidth=450" alt="Oprah">
-    </body>
+		<!-- PAGE CONTENT WILL BE PRINTED HERE --> 
+	</body>
 </html>
